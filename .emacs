@@ -1,5 +1,7 @@
 (package-initialize)
 
+(setq inhibit-startup-screen t)
+
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
@@ -22,6 +24,9 @@
 ;; auto-complete
 (ac-config-default)
 (global-auto-complete-mode t)
+
+;; dumb-jump
+(dumb-jump-mode)
 
 ;; Enable org mode
 (require 'org)
